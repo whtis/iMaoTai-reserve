@@ -3,6 +3,9 @@
 
 name: imaotai-action
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   push:
     branches: [ "master" ]
@@ -10,9 +13,6 @@ on:
       - '.github/workflows/**'
   schedule:
     - cron: '30,40 9 * * *'
-
-env:
-  TZ: Asia/Shanghai
 
 permissions:
   contents: read
