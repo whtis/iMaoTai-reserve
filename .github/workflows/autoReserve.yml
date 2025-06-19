@@ -12,7 +12,7 @@ on:
     paths:
       - '.github/workflows/**'
   schedule:
-    - cron: '30,40 9 * * *'
+    - cron: '30,40 1 * * *'
 
 permissions:
   contents: read
