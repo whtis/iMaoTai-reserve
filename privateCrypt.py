@@ -27,6 +27,7 @@ def encrypt_aes_ecb(plain_str, key):
     :return: base64后的密文
     """
     cipher = AES.new(key, AES.MODE_ECB)
+    # 使用 latin1 字符集解码字节字符串
     plain_str = cipher.decrypt(ciphertext)
     return plain_str.decode('latin1').strip()
 
